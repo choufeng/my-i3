@@ -6,3 +6,5 @@
 - 把所有的 jkl; 变更为 hjkl
 - 把 mod + h  变更为 mod + c
 
+## 使用
+把config文件的内容覆盖 ~/.config/i3/config 即可
