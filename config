@@ -154,3 +154,9 @@ bindsym $mod+r mode "resize"
 bar {
         status_command i3status
 }
+
+# 锁定屏幕， 需要安装 i3lock
+bindsym $mod+m exec i3lock
+
+# 用Ctrl+Mod+a 截图并复制到剪切版， 需要安装  scrot 和 xclip
+bindsym --release Control+$mod+a exec "scrot -s -b -m ~/pictures/screenshot.png && xclip -selection clipoard -t 'image/png' ~/pictures/screenshot.png"
