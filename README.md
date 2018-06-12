@@ -8,3 +8,10 @@
 
 ## 使用
 把config文件的内容覆盖 ~/.config/i3/config 即可
+
+## 附加安装的软件
+- rofi
+- i3lock
+- i3status
+- xclip
+- scrot
