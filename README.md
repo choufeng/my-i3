@@ -14,7 +14,7 @@
 ## 附加安装的软件
 - rofi
 - i3lock
-- i3status
+- conky
 - xclip
 - scrot
 - feh
