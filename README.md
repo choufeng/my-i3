@@ -7,7 +7,9 @@
 - 把 mod + h  变更为 mod + c
 
 ## 使用
-把config文件的内容覆盖 ~/.config/i3/config 即可
+1. 先安装附加软件
+2. 把config文件的内容覆盖 ~/.config/i3/config 
+3. 修改其中的两个图片路径
 
 ## 附加安装的软件
 - rofi
@@ -15,3 +17,4 @@
 - i3status
 - xclip
 - scrot
+- feh
