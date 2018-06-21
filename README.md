@@ -23,3 +23,25 @@
 ## 字体安装方法
 1. 拷贝字体文件夹到 /usr/share/fonts/目录下
 2. 在目录执行fc-cache -fv
+
+## 快捷键列表
+
+|按键|操作|
+|---|---|
+|mod+number|切换工作区|
+|mod+Shift+number|移动到工作区|
+|mod+h,j,k,l|焦点向左，下，上，右移动|
+|mod+d|打开rofi菜单|
+|mod+x|关闭窗体|
+|mod+Return|打开终端|
+|mod+c,v|横向，垂直分割|
+|mod+f|全屏|
+|mod+s,w,e|多种排列方法|
+|mod+Shift+space|浮动|
+|mod+a|焦点移动到上一层|
+|mod+Shift+c|Reload|
+|mod+Shift+r|Restart|
+|mod+Shift+e|注销|
+|mod+r|设定窗体占比大小|
+|mod+m|锁定桌面|
+|mod+Control+a|截图|
