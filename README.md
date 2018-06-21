@@ -22,7 +22,7 @@
 
 ## 字体安装方法
 1. 拷贝字体文件夹到 /usr/share/fonts/目录下
-2. 在目录执行fc-cache -fv
+2. 执行fc-cache -fv
 
 ## 快捷键列表
 
