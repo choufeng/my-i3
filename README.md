@@ -8,8 +8,9 @@
 
 ## 使用
 1. 先安装附加软件
-2. 把config文件的内容覆盖 ~/.config/i3/config 
-3. 修改其中的两个图片路径
+2. 安装字体
+3. 把config文件的内容覆盖 ~/.config/i3/config 
+4. 修改其中的两个图片路径
 
 ## 附加安装的软件
 - rofi
@@ -18,3 +19,7 @@
 - xclip
 - scrot
 - feh
+
+## 字体安装方法
+1. 拷贝字体文件夹到 /usr/share/fonts/目录下
+2. 在目录执行fc-cache -fv
