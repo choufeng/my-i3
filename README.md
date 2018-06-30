@@ -47,3 +47,14 @@
 |mod+r|设定窗体占比大小|
 |mod+m|锁定桌面|
 |mod+Control+a|截图|
+
+## 其他
+
+### 网络速度显示
+
+在conkyrc_bar配置中， 调整upspeed和downspeed后的网卡名称， 查看网卡名称的方法
+
+```
+cat /proc/net/dev
+```
+
