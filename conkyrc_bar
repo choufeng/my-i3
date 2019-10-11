@@ -38,4 +38,3 @@ conky.text = [[
 | HD:${fs_used /}:${fs_free} \
 |  ${time %Y-%m-%d %H:%M:%S} |
 ]]
-
