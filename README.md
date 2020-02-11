@@ -19,8 +19,8 @@
 - i3lock
 - conky
 - xclip
-- scrot
 - feh
+- deepin-screenshot
 
 ## 字体安装方法
 1. 拷贝字体文件夹到 /usr/share/fonts/目录下
@@ -57,4 +57,3 @@
 ```
 cat /proc/net/dev
 ```
-

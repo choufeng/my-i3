@@ -30,7 +30,7 @@ font pango:monospace 8
 exec --no-startup-id feh --bg-tile ~/pictures/jon-snow.jpg
 
 # run fcitx
-exec fcitx
+exec fcitx &
 
 # customize workspace name
 set $WS1   1:1 
@@ -215,7 +215,7 @@ bindsym $mod+Shift+b move container to workspace back_and_forth; workspace back_
 bindsym $mod+m exec i3lock -i ~/pictures/jon-snow.jpg
 
 #bindsym --release $mod+Control+a exec "scrot -s -b -m ~/pictures/screenshot-%Y-%m-%d_%H:%M:%S.png -e 'clipoard -t $n'"
-bindsym --release $mod+Control+a exec "scrot -s -e 'mv $f ~/pictures'"
+bindsym --release $mod+Control+a exec "deepin-screenshot"
 
 # Set shut down, restart
 bindsym $mod+Shift+x mode "$mode_system"
