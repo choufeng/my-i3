@@ -57,3 +57,9 @@
 ```
 cat /proc/net/dev
 ```
+
+### 关于使用Awesome字体的方式
+
+在bar 中增加font 项，
+在配置中使用像  &#xf120; 来表达。
+
