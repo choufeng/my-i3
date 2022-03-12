@@ -1,5 +1,8 @@
-# bspwm
-linux bspwm
+# yabai (mac)
+ 增加 mac 上  yabai对应的相关配置。 确保和bspwm的快捷键类似 
+
+# bspwm(linux)
+linux bspwm 
 调整了bspwm的快捷键确保和mac yabai的快捷键类似
 
 # my-i3

@@ -1,0 +1,89 @@
+
+cmd - return : open /Applications/iTerm.app
+
+########## 窗口的焦点与移动:  cmd
+# 焦点在窗口间移动
+cmd - h : yabai -m window --focus west
+cmd - j : yabai -m window --focus south
+cmd - k : yabai -m window --focus north
+cmd - l : yabai -m window --focus east
+
+# 切换焦点到另一个显示器
+cmd - n  : yabai -m display --focus prev
+cmd - m  : yabai -m display --focus next
+
+########## 窗口的位置:  cmd + ctrl
+# 焦点窗口和方向窗口换位
+cmd + ctrl - h : yabai -m window --swap west
+cmd + ctrl - j : yabai -m window --swap south
+cmd + ctrl - k : yabai -m window --swap north
+cmd + ctrl - l : yabai -m window --swap east
+
+# toggle window zoom
+#  扩大到父级别（不一定到全屏）
+cmd + ctrl - d : yabai -m window --toggle zoom-parent
+# 全屏来回切换
+cmd + ctrl - f : yabai -m window --toggle zoom-fullscreen
+# toggle window split type
+# 和邻居横向竖向来回切换
+cmd + ctrl - e : yabai -m window --toggle split
+
+# balance size of windows
+# 重新整理窗口？ 谨慎使用
+cmd + ctrl - 0 : yabai -m space --balance
+
+########## 窗口间穿越:  cmd + shift + ctrl
+# 焦点程序穿越到 下一个空间 桌面， 当前显示器桌面没有会穿越到另外一个显示器
+# cmd + shift - m : yabai -m window --space next; yabai -m space --focus next
+# cmd + shift - n : yabai -m window --space prev; yabai -m space --focus prev
+# send window to monitor and follow focus
+cmd + shift + ctrl - m  : yabai -m window --display next; yabai -m display --focus next
+cmd + shift + ctrl - n  : yabai -m window --display prev; yabai -m display --focus prev
+
+# 让交点程序穿越到桌面2
+cmd + shift - 1 : yabai -m window --space  1; yabai -m space --focus 1 
+cmd + shift - 2 : yabai -m window --space  2; yabai -m space --focus 2 
+cmd + shift - 3 : yabai -m window --space  3; yabai -m space --focus 3 
+cmd + shift - 4 : yabai -m window --space  4; yabai -m space --focus 4 
+cmd + shift - 5 : yabai -m window --space  5; yabai -m space --focus 5 
+
+########## 窗口间穿越:  cmd + shift
+# 窗口横向放大缩小
+cmd + shift - h : yabai -m window --resize right:-100:0
+cmd + shift - l : yabai -m window --resize right:100:0
+# 窗口纵向放大缩小
+cmd + shift - j : yabai -m window --resize bottom:0:100
+cmd + shift - k : yabai -m window --resize bottom:0:-100
+
+# 窗口横向放大缩小
+cmd + shift + alt - h : yabai -m window --resize left:-100:0
+cmd + shift + alt - l : yabai -m window --resize left:100:0
+# 窗口纵向放大缩小
+cmd + shift + alt - j : yabai -m window --resize top:0:100
+cmd + shift + alt - k : yabai -m window --resize top:0:-100
+
+
+########## 浮动窗口:  cmd + alt 系列主管浮动窗口
+# 浮动窗口并来到中心
+cmd + alt - u : yabai -m window --toggle float; \
+          yabai -m window --grid 4:4:1:1:2:2
+# 浮动窗口全屏
+cmd + alt - i  : yabai -m window --grid 1:1:0:0:1:1
+# move floating window
+cmd + alt - h : yabai -m window --move rel:-100:0
+cmd + alt - l : yabai -m window --move rel:100:0
+cmd + alt - k : yabai -m window --move rel:0:-100
+cmd + alt - j : yabai -m window --move rel:0:100
+
+
+
+# set insertion point in focused container
+# 在当前窗口的左边或者右边开辟空间给新窗口
+ctrl + alt - h : yabai -m window --insert west
+ctrl + alt - l : yabai -m window --insert east
+
+# toggle sticky(+float), topmost, picture-in-picture
+# 不生效？
+# alt - p : yabai -m window --toggle sticky;\
+#           yabai -m window --toggle topmost;\
+#           yabai -m window --toggle pip
