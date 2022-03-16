@@ -41,11 +41,11 @@ cmd + shift + ctrl - m  : yabai -m window --display next; yabai -m display --foc
 cmd + shift + ctrl - n  : yabai -m window --display prev; yabai -m display --focus prev
 
 # 让交点程序穿越到桌面2
-cmd + shift - 1 : yabai -m window --space  1; yabai -m space --focus 1 
-cmd + shift - 2 : yabai -m window --space  2; yabai -m space --focus 2 
-cmd + shift - 3 : yabai -m window --space  3; yabai -m space --focus 3 
-cmd + shift - 4 : yabai -m window --space  4; yabai -m space --focus 4 
-cmd + shift - 5 : yabai -m window --space  5; yabai -m space --focus 5 
+cmd + ctrl - 1 : yabai -m window --space  1; yabai -m space --focus 1 
+cmd + ctrl - 2 : yabai -m window --space  2; yabai -m space --focus 2 
+cmd + ctrl - 3 : yabai -m window --space  3; yabai -m space --focus 3 
+cmd + ctrl - 4 : yabai -m window --space  4; yabai -m space --focus 4 
+cmd + ctrl - 5 : yabai -m window --space  5; yabai -m space --focus 5 
 
 ########## 窗口间穿越:  cmd + shift
 # 窗口横向放大缩小
