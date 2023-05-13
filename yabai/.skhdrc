@@ -1,16 +1,17 @@
 
-cmd - return : open /Applications/iTerm.app
+# alt - return : open /Applications/iTerm.app
+ctrl - return : open /Applications/warp.app
 
 ########## 窗口的焦点与移动:  cmd
 # 焦点在窗口间移动
-cmd - h : yabai -m window --focus west
-cmd - j : yabai -m window --focus south
-cmd - k : yabai -m window --focus north
-cmd - l : yabai -m window --focus east
+ctrl - h : yabai -m window --focus west
+ctrl - j : yabai -m window --focus south
+ctrl - k : yabai -m window --focus north
+ctrl - l : yabai -m window --focus east
 
 # 切换焦点到另一个显示器
-cmd - n  : yabai -m display --focus prev
-cmd - m  : yabai -m display --focus next
+ctrl - n  : yabai -m display --focus prev
+ctrl - m  : yabai -m display --focus next
 
 ########## 窗口的位置:  cmd + ctrl
 # 焦点窗口和方向窗口换位
@@ -49,16 +50,16 @@ cmd + ctrl - 5 : yabai -m window --space  5; yabai -m space --focus 5
 
 ########## 窗口间穿越:  cmd + shift
 # 窗口横向放大缩小
-cmd + shift - h : yabai -m window --resize right:-100:0
-cmd + shift - l : yabai -m window --resize right:100:0
 # 窗口纵向放大缩小
-cmd + shift - j : yabai -m window --resize bottom:0:100
-cmd + shift - k : yabai -m window --resize bottom:0:-100
+cmd + shift + ctrl - h : yabai -m window --resize right:-100:0
+cmd + shift + ctrl - l : yabai -m window --resize right:100:0
+cmd + shift + ctrl - j : yabai -m window --resize bottom:0:100
+cmd + shift + ctrl - k : yabai -m window --resize bottom:0:-100
 
 # 窗口横向放大缩小
+# 窗口纵向放大缩小
 cmd + shift + alt - h : yabai -m window --resize left:-100:0
 cmd + shift + alt - l : yabai -m window --resize left:100:0
-# 窗口纵向放大缩小
 cmd + shift + alt - j : yabai -m window --resize top:0:100
 cmd + shift + alt - k : yabai -m window --resize top:0:-100
 
@@ -67,8 +68,8 @@ cmd + shift + alt - k : yabai -m window --resize top:0:-100
 # 浮动窗口并来到中心
 cmd + alt - u : yabai -m window --toggle float; \
           yabai -m window --grid 4:4:1:1:2:2
-# 浮动窗口全屏
-cmd + alt - i  : yabai -m window --grid 1:1:0:0:1:1
+# 浮动窗口全屏, 这个似乎没有效果
+cmd + shift + ctrl + alt - u  : yabai -m window --grid 1:1:0:0:1:1
 # move floating window
 cmd + alt - h : yabai -m window --move rel:-100:0
 cmd + alt - l : yabai -m window --move rel:100:0
